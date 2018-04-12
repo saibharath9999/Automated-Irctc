@@ -4,8 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 #### LOGIN
-User_Name = "Marellasai"
-Password = "Saimarella"
+User_Name = "username"
+Password = "pwd"
 #### TRAVEL_DETAILS
 Source = "CHENNAI CENTRAL - MAS"
 Dest = "THRISUR - TCR"
@@ -89,8 +89,8 @@ def pay():
     time.sleep(5)
     #dr.find_element_by_name('proceed').click()
 def net():
-    dr.find_element_by_xpath('//*[@id="username"]').send_keys('saibharath9999')
-    dr.find_element_by_xpath('//*[@id="label2"]').send_keys('9S@ibharath')
+    dr.find_element_by_xpath('//*[@id="username"]').send_keys('username')
+    dr.find_element_by_xpath('//*[@id="label2"]').send_keys('pswd')
     dr.find_element_by_xpath('//*[@id="login_block"]/div[2]/div[1]/div[2]/div/input[1]').click()
     dr.find_element_by_xpath('//*[@id="Go"]').click()
     dr.find_element_by_xpath('//*[@id="confirmButton"]').click()
